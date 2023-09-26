@@ -14,6 +14,7 @@ RUN apt-get update && \
 
 # Instalamos playwright y continuamos incluso si falla
 RUN playwright install || true
+RUN playwright install-deps || true
 
 # Define el comando para ejecutar la aplicación
 CMD ["python", "main.py"]
