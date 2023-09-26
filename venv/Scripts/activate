@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\marti\OneDrive\Escritorio\Null\Social Club\Python\ProxyScrap\venv"
+VIRTUAL_ENV="C:\Users\marti\OneDrive\Escritorio\Null\Social Club\Python\proxy-harvest-github-version\proxies-finder\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
