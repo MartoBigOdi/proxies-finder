@@ -12,8 +12,8 @@ RUN apt-get update && \
     apt-get install -yq libnss3 libglib2.0-0 libx11-6 && \
     apt-get clean
 
-# Instalamos playwright
-RUN playwright install
+# Instalamos playwright y continuamos incluso si falla
+RUN playwright install || true
 
 # Define el comando para ejecutar la aplicación
 CMD ["python", "main.py"]
