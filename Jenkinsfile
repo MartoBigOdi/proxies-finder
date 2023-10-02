@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    triggers {
-        cron('36 23 * * 0') // Esto ejecutará la pipeline cada domingo a las 23:33
-    }
-
     stages {
         stage('Descargar el repositorio') {
             steps {
