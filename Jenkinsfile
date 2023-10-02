@@ -5,7 +5,7 @@ pipeline {
         stage('Descargar el repositorio') {
             steps {
                 // Clona tu repositorio privado desde Git utilizando la credencial definida en Jenkins
-                checkout([$class: 'GitSCM', branches: [[name: 'main']], userRemoteConfigs: [[url: 'https://MartoBigOdi:odilbertito1987@github.com/MartoBigOdi/proxies-finder.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: 'main']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'CloneOption', credentialsId: 'f686154c-2c47-4e17-8717-a50b841ea815', depth: 1], [$class: 'LocalBranch', localBranch: 'main']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'f686154c-2c47-4e17-8717-a50b841ea815', url: 'https://github.com/MartoBigOdi/proxies-finder.git']]])
             }
         }
 
