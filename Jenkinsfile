@@ -12,7 +12,7 @@ pipeline {
         stage('Construir y Levantar la Aplicación') {
             steps {
                 // Ejecuta el comando para construir e iniciar la aplicación con Docker Compose en Windows
-                bat 'docker-compose up -d --build'
+                bat 'docker-compose up'
             }
         }
 
