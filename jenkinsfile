@@ -16,13 +16,13 @@ pipeline {
             }
         }
 
-        stage('Enviar correo') {
-            steps {
-                // Envia un correo electrónico con resultados de la ejecución
-                mail to: 'martin.vasconcelo@gmail.com',
-                     subject: 'Ejecución exitosa de Jenkins',
-                     body: 'La ejecución de Jenkins se ha completado correctamente.'
-            }
-        }
+        # stage('Enviar correo') {
+        #     steps {
+        #         // Envia un correo electrónico con resultados de la ejecución
+        #         mail to: 'martin.vasconcelo@gmail.com',
+        #              subject: 'Ejecución exitosa de Jenkins',
+        #              body: 'La ejecución de Jenkins se ha completado correctamente.'
+        #     }
+        # }
     }
 }
